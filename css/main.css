@@ -1,0 +1,96 @@
+*{
+    font-family: 'lato',sans-serif;
+}
+
+
+.navbar{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: inherit;
+    grid-template-areas: inherit;
+    color: black;
+    grid-gap: 10px;   
+}
+
+a.logo{
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar>button{
+    width: 100%;
+}
+
+button.signin{
+    font-size: 20px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.headercontent {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        headermain headerimg;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.headermain>h2{
+    font-size: 75px;
+    margin: 20% 0 0 0;  
+}
+
+.headermain>h3{
+    font-size: 50px;
+    margin: 5% 0 5% 0;
+}
+
+.headermain>h4{
+    margin: 5% 0 5% 0;
+    font-size: 30px;
+    color: #8b8b8b
+}
+
+.headermain>button.signin{
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 25px;
+    border-color: #0f40da;
+    color: #0f40da;
+}
+
+.headermain>button.signup{
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 25px;
+    margin-right: 3%;
+    border-color: #0f40da;
+    background-color: #0f40da;
+    color: white;
+}
+
+.headermain>p{
+    margin: 5% 0 5% 0;
+    font-size: 25px;
+}
+
+.headermain>p{
+    color: #787878;
+}
+
+.headerimg{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: max-content;
+    margin-top: 15%;
+}
+
