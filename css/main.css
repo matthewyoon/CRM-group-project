@@ -2,24 +2,79 @@
     font-family: 'lato',sans-serif;
 }
 
-
 .navbar{
     display: grid;
     background-color: white;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: inherit;
-    grid-template-areas: inherit;
-    color: black;
     grid-gap: 10px;   
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-a.logo{
+.logo{
+    display: flex;
     justify-items: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
-.navbar>button{
-    width: 100%;
+.home{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.features{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.pricing{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.how{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.support{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.navbar>.signin{
+    display: flex;
+    justify-self: flex-end;
+    align-self: center;
+    border: 1px solid #0f40da;
+    padding: 7px 20px 7px 20px;
+    border-radius: 7px;
+    color: #0f40da;
+}
+
+.navbar>.signup{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid #0f40da;
+    background-color: #0f40da;
+    color: white;
+    margin-right: 10%;
+    padding: 7px 20px 7px 20px;
+    border-radius: 7px;
+}
+
+.signin>a{
+    color:#0f40da;
+}
+
+.signup>a{
+    color:white;
 }
 
 button.signin{
