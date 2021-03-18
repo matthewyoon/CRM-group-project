@@ -1,0 +1,116 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* Main-Image Container Style */
+.main-image-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "slogan-box icon-box";
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 125px;
+    margin-right: 125px;
+    align-items: stretch;
+}
+
+/* Main-Image Container > Slogan Box */
+.slogan-box{
+    grid-area: slogan-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan-box h1{
+    font-size: 50px;
+    line-height: 70px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.slogan-box h2{
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.slogan-box p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.slogan-box-buttons{
+    display: flex;
+    flex-flow:row nowrap;
+    margin-bottom: 20px;
+}
+
+.sign-up-button{
+    border: 1px solid #0f40da;
+    border-radius: 15px;
+    background-color: #0f40da;
+    color: white;
+    padding: 20px 37px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px 4px 0px;
+    cursor: pointer;
+}
+
+.chat-button{
+    border: 1px solid #0f40da;
+    border-radius: 15px;
+    background-color: white;
+    color: #0f40da;
+    padding: 20px 37px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px 4px 0px;
+    cursor: pointer;
+}
+
+.slogan-box-bait{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.circle-divider{
+    margin-left:5px;
+    margin-right: 5px;
+    height: 8px;
+    width: 7px;
+    background-color: #0f40da;
+    border: 1px solid #0f40da;
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Main-Image Container > Icon Box */
+.icon-box{
+    grid-area: icon-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.icon-box img{ /*this still needs to be scaled larger*/
+    object-fit: scale-down;
+    object-position: 50px 50px;
+    width:100%;
+}
+
+
