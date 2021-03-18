@@ -1,0 +1,29 @@
+/* BASIC STYLES */ * { padding: 0; margin: 0; } li { list-style-type: none; } a { text-decoration: none; } body { font-family: 'Lato', sans-serif; } h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; } .footer { color: #fff; background: #0f40da; padding: 8em 0; }
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: #88f157;
+    border-radius: 15px;
+    border: 2px solid #A2D9CE;
+}
+
+.btn:hover{
+    background-color: #A2D9CE;
+}
+
+.btn-md {
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 2px solid #A2D9CE;
+}
+
+.btn-md:hover{
+    background-color: #A2D9CE;
+}
+
+.footer{
+    
+}
