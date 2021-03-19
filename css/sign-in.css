@@ -9,6 +9,10 @@ a{
     text-decoration: none;
 }
 
+button{
+    outline: none;
+}
+
 /*SIGN IN PAGE*/
 
 .signincontainer{
