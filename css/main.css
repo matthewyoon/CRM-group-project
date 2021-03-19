@@ -114,9 +114,6 @@ button.signin{
     font-size: 20px;
 }
 
-
-
-
 /*HEADER CONTENT*/
 
 .headercontent {
@@ -236,6 +233,7 @@ button.headermainsignin{
     justify-content: space-between;
     align-items: center;
     margin: 50px;
+    margin-bottom: 10%;
 }
 
 .doubletap-text{
@@ -244,14 +242,16 @@ button.headermainsignin{
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
 }
 
 .doubletap-row{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 50px auto;
+    width: 100%;
+    margin: 80px auto;
 }
 
 .doubletap-row-icon{
@@ -262,7 +262,7 @@ button.headermainsignin{
     background-color: #eee ;
     border:1px solid gray;
     border-radius: 25px;
-    margin:0 60px;
+    margin:0 100px;
     width: 175px;
     height: 190px;
 }
@@ -279,9 +279,6 @@ button.headermainsignin{
         content-p2-left content-p2-right;
     justify-items: center;
     align-items: center;
-    border: 1px solid lightgray;
-    background-color: #0f40da;
-    border-radius: 35px;
     width: 80%;
     margin: 50px;
 }
@@ -293,7 +290,7 @@ button.headermainsignin{
     align-items: stretch;
     margin: 300px 0px;
     background-color:white;
-    border-left: 1px solid lightgray;
+    border: 1px solid lightgray;
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
     width: 100%;
@@ -313,32 +310,38 @@ button.headermainsignin{
     align-items: flex-start;
     background-color: #0f40da;
     border: 1px solid lightgray;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
     width: 100%;
     height: 100%;
 }
 
 .content-p2-right-text{
+    align-self: center;
     padding-left: 10%;
     padding-right: 30%;
+    height: 100%;
+    margin-top: 25%;
 }
 
 .content-p2-right h2, .content-p2-right p{
     color: white;
     line-height: 30px;
+    margin-bottom: 40px;
 }
 
 .content-p2-right ul{
     color: white;
     line-height:40px;
+    margin-bottom: 40px;
 }
 
 .content-p2-right button{
     border-radius: 15px;
     margin: 25px 0px;
     padding: 20px;
-    width: 100%;
+    width: 60%;
     font-size: 25px;
-    margin-left: 10%;
     border: 1px solid white;
     background-color: #0f40da;
     color: white;
@@ -351,6 +354,11 @@ button.headermainsignin{
     justify-items: space-between;
     align-items: center;
     margin: 75px;
+    margin-top: 10%;
+}
+
+.content-part-3 h2{
+    margin-bottom: 50px;
 }
 
 .content-p3-row{
@@ -364,6 +372,7 @@ button.headermainsignin{
     margin: 50px 0;
     justify-items: center;
     align-items: end;
+
 }
 
 /*FOOTER CSS*/
