@@ -1,0 +1,12 @@
+.footer-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-row{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center
+}
