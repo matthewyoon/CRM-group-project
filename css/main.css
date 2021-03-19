@@ -123,9 +123,8 @@ a{
     align-content: space-between; /* Aligns flex container's 
     lines within when there is extra space in the cross axis
      (horizontally) */
-    width: 75%;
     margin: 50px auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .content-part-1{
@@ -177,7 +176,7 @@ a{
         content-p2-left content-p2-right;
     justify-items: center;
     align-items: center;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     background-color: #0f40da;
     border-radius: 35px;
     width: 80%;
@@ -188,26 +187,36 @@ a{
     display: flex;
     flex-flow: column nowrap;
     justify-items: center;
-    align-items: center;
-    margin: 150px 0px;
+    align-items: stretch;
+    margin: 300px 0px;
     background-color:white;
-    border: 1px solid purple;
+    border-left: 1px solid lightgray;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    width: 100%;
+    height: 100%;
 }
 
 .content-p2-left img{
     object-fit: contain;
     width: 100%;
+    flex-grow: 1;
 }
 
 .content-p2-right{
     display: flex;
     flex-flow: column nowrap;
-    justify-items: stretch;
-    align-items: stretch;
-    padding: 10px 50px;
-    margin: 100px 80px;
+    justify-items: center;
+    align-items: flex-start;
     background-color: #0f40da;
-    /* border: 1px solid chocolate; */
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 100%;
+}
+
+.content-p2-right-text{
+    padding-left: 10%;
+    padding-right: 30%;
 }
 
 .content-p2-right h2, .content-p2-right p{
@@ -224,9 +233,9 @@ a{
     border-radius: 15px;
     margin: 25px 0px;
     padding: 20px;
-    width: 50%;
+    width: 100%;
     font-size: 25px;
-    margin-right: 3%;
+    margin-left: 10%;
     border: 1px solid white;
     background-color: #0f40da;
     color: white;
