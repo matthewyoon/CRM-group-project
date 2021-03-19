@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* BASIC STYLES */ * { padding: 0; margin: 0; } li { list-style-type: none; } a { text-decoration: none; } body { font-family: 'Lato', sans-serif; } h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; } .footer { color: #fff; background: #0f40da; padding: 8em 0; }
 
 .btn {
@@ -23,4 +22,118 @@
 
 .btn-md:hover{
     background-color: #A2D9CE;
+}
+
+*{
+    font-family: 'lato', sans-serif;
+}
+
+/*Navigation Bar*/
+.navbar{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: inherit;
+    grid-template-areas: inherit;
+    color: black;
+    grid-gap: 10px;   
+}
+
+a.logo{
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar>button{
+    width: 100%;
+}
+
+button.signin{
+    font-size: 20px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Header */
+.headercontent {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        headermain headerimg;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.headermain>h2{
+    font-size: 75px;
+    margin: 20% 0 0 0;  
+}
+
+.headermain>h3{
+    font-size: 50px;
+    margin: 5% 0 5% 0;
+}
+
+.headermain>h4{
+    margin: 5% 0 5% 0;
+    font-size: 30px;
+    color: #8b8b8b
+}
+
+.headermain>button.signin{
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 25px;
+    border-color: #0f40da;
+    color: #0f40da;
+}
+
+.headermain>button.signup{
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 25px;
+    margin-right: 3%;
+    border: 1px solid #0f40da;
+    background-color: #0f40da;
+    color: white;
+}
+
+.headermain>p{
+    margin: 5% 0 5% 0;
+    font-size: 25px;
+}
+
+.headermain>p{
+    color: #787878;
+}
+
+.slogan-box-bait{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.circle-divider{
+    margin-left:5px;
+    margin-right: 5px;
+    height: 8px;
+    width: 7px;
+    background-color: #0f40da;
+    border: 1px solid #0f40da;
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.headerimg{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: max-content;
+    margin-top: 15%;
 }
