@@ -1,0 +1,45 @@
+.content-container{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between; /* Aligns flex container's 
+    lines within when there is extra space in the cross axis
+     (horizontally) 
+    width: 75%;*/
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+.content-part-1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.hiw-text-1{
+    border-top: 1px solid gray;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    width: 35%;
+    text-align: center;
+}
+
+.hiw-text-1 h2{
+    padding: 30px;
+}
+
+.hiw-text-2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    width: 35%;
+    text-align: center;
+}
