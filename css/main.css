@@ -1,4 +1,4 @@
-/* Universal styles*/
+/*Universal styles*/
 *{
     font-family: 'lato',sans-serif;
     padding: 0; margin: 0; 
@@ -115,7 +115,7 @@ button.signin{
     font-size: 20px;
 }
 
-/*HEADER CONTENT*/
+/*Header Content*/
 
 .headercontent {
     display: grid;
@@ -215,7 +215,7 @@ button.headermainsignin{
     margin-right: 15px;
 }
 
-/* This is the content*/
+/*Main Content*/
 .content-container{
     display:flex;
     flex-flow: column nowrap;
@@ -268,6 +268,10 @@ button.headermainsignin{
     height: 190px;
 }
 
+.doubletap-row-icon p{
+    padding-top: 20px;
+}
+
 .doubletap-row-icon img{
     height: 60px;
 }
@@ -282,6 +286,7 @@ button.headermainsignin{
     align-items: center;
     width: 80%;
     margin: 50px;
+
 }
 
 .content-p2-left{ /*How to make white background fit???*/
@@ -296,6 +301,7 @@ button.headermainsignin{
     border-bottom-left-radius: 35px;
     width: 100%;
     height: 100%;
+
 }
 
 .content-p2-left img{
@@ -318,9 +324,9 @@ button.headermainsignin{
 }
 
 .content-p2-right-text{
-    align-self: center;
+    align-self: flex-start;
     padding-left: 10%;
-    padding-right: 30%;
+    padding-right: 10%;
     height: 100%;
     margin-top: 25%;
 }
@@ -376,7 +382,7 @@ button.headermainsignin{
 
 }
 
-/*FOOTER CSS*/
+/*Footer*/
 
 .circle-divider-2{
     margin-left:5px;
