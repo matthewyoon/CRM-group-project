@@ -1,3 +1,4 @@
+/* Universal styles*/
 *{
     font-family: 'lato',sans-serif;
     padding: 0; margin: 0; 
@@ -214,7 +215,7 @@ button.headermainsignin{
     margin-right: 15px;
 }
 
-/* Content Container */
+/* This is the content*/
 .content-container{
     display:flex;
     flex-flow: column nowrap;
@@ -379,10 +380,24 @@ button.headermainsignin{
 
 /*FOOTER CSS*/
 
+.circle-divider-2{
+    margin-left:5px;
+    margin-right: 5px;
+    height: 8px;
+    width: 7px;
+    background-color: #050505;
+    border: 1px solid #050505;
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ 
 .footer { 
-    color: #fff; 
-    background: #0f40da; 
-    padding: 8em 0; 
+    color: #fff; background: #0f40da; padding: 8em 0; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
@@ -391,6 +406,8 @@ button.headermainsignin{
     background-color: #88f157;
     border-radius: 15px;
     border: 2px solid #A2D9CE;
+    margin-right: 20%;
+    color: #ffffff;
 }
 
 .btn:hover{
@@ -407,6 +424,19 @@ button.headermainsignin{
 
 .btn-md:hover{
     background-color: #A2D9CE;
+}
+
+.footer-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-row{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center
 }
 
 /*SIGN IN PAGE*/
