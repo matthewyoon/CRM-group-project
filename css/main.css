@@ -114,9 +114,6 @@ button.signin{
     font-size: 20px;
 }
 
-
-
-
 /*HEADER CONTENT*/
 
 .headercontent {
@@ -128,6 +125,8 @@ button.signin{
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
+    width: 75%;
+    margin: 0px auto;
 }
 
 .headermain>h2{
@@ -215,9 +214,166 @@ button.headermainsignin{
     margin-right: 15px;
 }
 
+/* Content Container */
+.content-container{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between; /* Aligns flex container's 
+    lines within when there is extra space in the cross axis
+     (horizontally) */
+    margin: 50px auto;
+    /* border: 1px solid black; */
+}
 
-/* BASIC STYLES */ 
+.content-part-1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 10%;
+}
 
+.doubletap-text{
+    border-top: 1px solid gray;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.doubletap-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 80px auto;
+}
+
+.doubletap-row-icon{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee ;
+    border:1px solid gray;
+    border-radius: 25px;
+    margin:0 100px;
+    width: 175px;
+    height: 190px;
+}
+
+.doubletap-row-icon img{
+    height: 60px;
+}
+
+.content-part-2{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        content-p2-left content-p2-right;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px;
+}
+
+.content-p2-left{ /*How to make white background fit???*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: stretch;
+    margin: 300px 0px;
+    background-color:white;
+    border: 1px solid lightgray;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+.content-p2-left img{
+    object-fit: contain;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.content-p2-right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: flex-start;
+    background-color: #0f40da;
+    border: 1px solid lightgray;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+.content-p2-right-text{
+    align-self: center;
+    padding-left: 10%;
+    padding-right: 30%;
+    height: 100%;
+    margin-top: 25%;
+}
+
+.content-p2-right h2, .content-p2-right p{
+    color: white;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.content-p2-right ul{
+    color: white;
+    line-height:40px;
+    margin-bottom: 40px;
+}
+
+.content-p2-right button{
+    border-radius: 15px;
+    margin: 25px 0px;
+    padding: 20px;
+    width: 60%;
+    font-size: 25px;
+    border: 1px solid white;
+    background-color: #0f40da;
+    color: white;
+    align-self: flex-start;
+    }
+
+.content-part-3{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: space-between;
+    align-items: center;
+    margin: 75px;
+    margin-top: 10%;
+}
+
+.content-part-3 h2{
+    margin-bottom: 50px;
+}
+
+.content-p3-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+        content-p3-email content-p3-task
+        content-p3-analytics content-p3-calendars;
+    column-gap: 300px;
+    margin: 50px 0;
+    justify-items: center;
+    align-items: end;
+
+}
 
 /*FOOTER CSS*/
 
@@ -250,7 +406,6 @@ button.headermainsignin{
 .btn-md:hover{
     background-color: #A2D9CE;
 }
-
 
 /*SIGN IN PAGE*/
 
@@ -310,6 +465,10 @@ form.formsignin {
 
 .signinright>.signin1{
     display: flex;
+    align-content: center;
+    justify-content: center;
+    width: max-content;
+    margin-top: 15%;
     border: 1px solid #0f40da;
     padding: 7px 20px 7px 20px;
     border-radius: 7px;
