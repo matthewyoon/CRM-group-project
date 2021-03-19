@@ -41,6 +41,8 @@ a{
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
+    width: 75%;
+    margin: 0px auto;
 }
 
 .headermain>h2{
@@ -110,4 +112,144 @@ a{
     justify-content: center;
     width: max-content;
     margin-top: 15%;
+}
+
+/* Content Container */
+.content-container{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between; /* Aligns flex container's 
+    lines within when there is extra space in the cross axis
+     (horizontally) */
+    width: 75%;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+.content-part-1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.doubletap-text{
+    border-top: 1px solid gray;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doubletap-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.doubletap-row-icon{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee ;
+    border:1px solid gray;
+    border-radius: 25px;
+    margin:0 60px;
+    width: 175px;
+    height: 190px;
+}
+
+.doubletap-row-icon img{
+    height: 60px;
+}
+
+.content-part-2{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        content-p2-left content-p2-right;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: #0f40da;
+    border-radius: 35px;
+    width: 80%;
+    margin: 50px;
+}
+
+.content-p2-left{ /*How to make white background fit???*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: center;
+    margin: 150px 0px;
+    background-color:white;
+    border: 1px solid purple;
+}
+
+.content-p2-left img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.content-p2-right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: stretch;
+    align-items: stretch;
+    padding: 10px 50px;
+    margin: 100px 80px;
+    background-color: #0f40da;
+    /* border: 1px solid chocolate; */
+}
+
+.content-p2-right h2, .content-p2-right p{
+    color: white;
+    line-height: 30px;
+}
+
+.content-p2-right ul{
+    color: white;
+    line-height:40px;
+}
+
+.content-p2-right button{
+    border-radius: 15px;
+    margin: 25px 0px;
+    padding: 20px;
+    width: 50%;
+    font-size: 25px;
+    margin-right: 3%;
+    border: 1px solid white;
+    background-color: #0f40da;
+    color: white;
+    align-self: flex-start;
+    }
+
+.content-part-3{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: space-between;
+    align-items: center;
+    margin: 75px;
+}
+
+.content-p3-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+        content-p3-email content-p3-task
+        content-p3-analytics content-p3-calendars;
+    column-gap: 300px;
+    margin: 50px 0;
+    justify-items: center;
+    align-items: end;
 }
