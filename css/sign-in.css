@@ -1,12 +1,14 @@
+/*Universal Syles*/
+
 *{
     font-family: 'lato',sans-serif;
     margin: 0;
 }
 
-
 a{
     text-decoration: none;
 }
+
 /*SIGN IN PAGE*/
 
 .signincontainer{
@@ -64,8 +66,6 @@ button.try{
     left: 23vh;
     width: 50%;
 }
-
-
 
 .signinright{
     display: flex;
