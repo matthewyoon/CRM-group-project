@@ -17,7 +17,7 @@ a{
     width: 1920px;
     grid-template-columns: 3fr 2fr;
     grid-template-areas: 
-    signinleft signinright;
+    signupleft signupright;
 }
 
 .leftbackground{
