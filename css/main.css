@@ -1,3 +1,4 @@
+/*Universal styles*/
 *{
     font-family: 'lato',sans-serif;
     padding: 0; margin: 0; 
@@ -114,10 +115,7 @@ button.signin{
     font-size: 20px;
 }
 
-
-
-
-/*HEADER CONTENT*/
+/*Header Content*/
 
 .headercontent {
     display: grid;
@@ -128,6 +126,8 @@ button.signin{
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
+    width: 75%;
+    margin: 0px auto;
 }
 
 .headermain>h2{
@@ -215,16 +215,193 @@ button.headermainsignin{
     margin-right: 15px;
 }
 
+/*Main Content*/
+.content-container{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between; /* Aligns flex container's 
+    lines within when there is extra space in the cross axis
+     (horizontally) */
+    margin: 50px auto;
+    /* border: 1px solid black; */
+}
 
-/* BASIC STYLES */ 
+.content-part-1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 10%;
+}
 
+.doubletap-text{
+    border-top: 1px solid gray;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
 
-/*FOOTER CSS*/
+.doubletap-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 80px auto;
+}
 
+.doubletap-row-icon{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee ;
+    border:1px solid gray;
+    border-radius: 25px;
+    margin:0 100px;
+    width: 175px;
+    height: 190px;
+}
+
+.doubletap-row-icon p{
+    padding-top: 20px;
+}
+
+.doubletap-row-icon img{
+    height: 60px;
+}
+
+.content-part-2{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        content-p2-left content-p2-right;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px;
+
+}
+
+.content-p2-left{ /*How to make white background fit???*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: stretch;
+    margin: 300px 0px;
+    background-color:white;
+    border: 1px solid lightgray;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.content-p2-left img{
+    object-fit: contain;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.content-p2-right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: flex-start;
+    background-color: #0f40da;
+    border: 1px solid lightgray;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+.content-p2-right-text{
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    margin-top: 25%;
+}
+
+.content-p2-right h2, .content-p2-right p{
+    color: white;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.content-p2-right ul{
+    color: white;
+    line-height:40px;
+    margin-bottom: 40px;
+}
+
+.content-p2-right button{
+    border-radius: 15px;
+    margin: 25px 0px;
+    padding: 20px;
+    width: 60%;
+    font-size: 25px;
+    border: 1px solid white;
+    background-color: #0f40da;
+    color: white;
+    align-self: flex-start;
+    }
+
+.content-part-3{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: space-between;
+    align-items: center;
+    margin: 75px;
+    margin-top: 10%;
+}
+
+.content-part-3 h2{
+    margin-bottom: 50px;
+}
+
+.content-p3-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+        content-p3-email content-p3-task
+        content-p3-analytics content-p3-calendars;
+    column-gap: 300px;
+    margin: 50px 0;
+    justify-items: center;
+    align-items: end;
+
+}
+
+/*Footer*/
+
+.circle-divider-2{
+    margin-left:5px;
+    margin-right: 5px;
+    height: 8px;
+    width: 7px;
+    background-color: #050505;
+    border: 1px solid #050505;
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ 
 .footer { 
-    color: #fff; 
-    background: #0f40da; 
-    padding: 8em 0; 
+    color: #fff; background: #0f40da; padding: 8em 0; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
@@ -233,6 +410,8 @@ button.headermainsignin{
     background-color: #88f157;
     border-radius: 15px;
     border: 2px solid #A2D9CE;
+    margin-right: 20%;
+    color: #ffffff;
 }
 
 .btn:hover{
@@ -251,4 +430,80 @@ button.headermainsignin{
     background-color: #A2D9CE;
 }
 
+.footer-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-row{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center
+}
+
+/*SIGN IN PAGE*/
+
+.leftbackground{
+    width: 1080px;
+    height: 1920px;
+    background-color: #0f40da;
+    clip-path: ellipse(75% 58% at 15% -3%);
+}
+
+.signincontainer{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    signinleft signinright;
+}
+
+.signinright{
+    display: grid;
+    grid-template-columns: 500px 1fr;    
+    grid-gap: 300px;
+}
+
+form.formsignin {
+    position: absolute; 
+    left: 65%; 
+    top: 30%;
+}
+
+.signinright>label{
+    grid-column: 1/2;
+}
+
+.signinright>h2{
+    font-size: 60px;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+
+.signinright>input{
+    grid-column: 2/3;
+    width: 150%;
+    box-sizing: content-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 20px 20px 12px 40px;
+    margin-bottom: 50px;
+}
+
+.signinright>.signin1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: max-content;
+    margin-top: 15%;
+    border: 1px solid #0f40da;
+    padding: 7px 20px 7px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+}
 
