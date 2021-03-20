@@ -145,9 +145,9 @@ button.signin{
 }
 
 .headermain>h2{
-    font-size: 75px;
+    font-size: 80px;
     line-height: 100px;
-    margin: 15% 0 0 0;  
+    /* margin: 15% 0 0 0;   */
 }
 
 .headermain>h3{
