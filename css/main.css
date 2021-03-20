@@ -119,32 +119,40 @@ button.signin{
 
 .headercontent {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    /* grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        headermain headerimg;
-    grid-gap: 10px;
+        "headermain headerimg"; 
+    grid-column-gap: 10px; */
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "headermain . headerimg";
     justify-items: center;
     align-items: center;
+    justify-content: space-between;
     width: 75%;
     margin: 0px auto;
 }
 
 .headermain{
-    width: 100%;
-}
+    /* display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center; */
 
-.headerimg{
     width: 100%;
 }
 
 .headermain>h2{
     font-size: 75px;
-    margin: 20% 0 0 0;  
+    line-height: 100px;
+    margin: 15% 0 0 0;  
 }
 
 .headermain>h3{
     font-size: 50px;
+    line-height: 25px;
     margin: 5% 0 5% 0;
 }
 
@@ -174,10 +182,8 @@ button.signin{
 
 .headermain>p{
     margin: 5% 0 5% 0;
-    font-size: 25px;
-}
+    font-size: 30px;
 
-.headermain>p{
     color: #787878;
 }
 
@@ -198,11 +204,20 @@ button.headermainsignin{
 
 .headerimg{
     display: flex;
-    align-content: center;
-    justify-content: center;
-    width: max-content;
-    margin-top: 15%;
-    margin-right: 15%;
+    flex-flow: row nowrap;
+    align-content:flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 30%;
+    overflow: hidden;
+    /* margin-top: 15%;
+    margin-right: 15%; */
+}
+
+.headerimg img{
+    width: 115%;
+    height: 115%;
+    object-fit: contain;
 }
 
 .slogan-box-bait{
