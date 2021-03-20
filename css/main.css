@@ -130,6 +130,14 @@ button.signin{
     margin: 0px auto;
 }
 
+.headermain{
+    width: 100%;
+}
+
+.headerimg{
+    width: 100%;
+}
+
 .headermain>h2{
     font-size: 75px;
     margin: 20% 0 0 0;  
