@@ -109,6 +109,7 @@ button.signin0{
 
 .signup>a{
     color:white;
+    font-size:3vh;
 }
 
 button.signin{
@@ -131,34 +132,27 @@ button.signin{
     justify-items: center;
     align-items: center;
     justify-content: space-between;
-    width: 75%;
+    width: 80%;
     margin: 0px auto;
 }
 
 .headermain{
-    /* display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    justify-content: center; */
-
     width: 100%;
 }
 
 .headermain>h2{
-    font-size: 80px;
-    line-height: 100px;
-    /* margin: 15% 0 0 0;   */
+    font-size: 6vh;
+    margin: 15% 0 2% 0;  
 }
 
 .headermain>h3{
-    font-size: 50px;
-    line-height: 25px;
-    margin: 5% 0 5% 0;
+    font-size: 4vh;
+    margin: 1% 0 1% 0;
 }
 
 .headermain>h4{
-    margin: 5% 0 5% 0;
-    font-size: 30px;
+    margin: 3% 0 3% 0;
+    font-size: 2.5vh;
     color: #8b8b8b
 }
 
@@ -181,9 +175,8 @@ button.signin{
 }
 
 .headermain>p{
-    margin: 5% 0 5% 0;
-    font-size: 30px;
-
+    margin: 3% 0 3% 0;
+    font-size: 2.5vh;
     color: #787878;
 }
 
@@ -197,7 +190,7 @@ button.headermainsignin{
     border: none;
     background-color: white;
     color: #8b8b8b;
-    font-size: 25px;
+    font-size: 2.5vh;
     font-weight: bold;
     display: inherit;
 }
@@ -215,8 +208,8 @@ button.headermainsignin{
 }
 
 .headerimg img{
-    width: 115%;
-    height: 115%;
+    width: 105%;
+    height: 105%;
     object-fit: contain;
 }
 
@@ -248,7 +241,6 @@ button.headermainsignin{
     lines within when there is extra space in the cross axis
      (horizontally) */
     margin: 50px auto;
-    /* border: 1px solid black; */
 }
 
 .content-part-1{
@@ -312,7 +304,7 @@ button.headermainsignin{
 
 }
 
-.content-p2-left{ /*How to make white background fit???*/
+.content-p2-left{
     display: flex;
     flex-flow: column nowrap;
     justify-items: center;
