@@ -128,11 +128,11 @@ button.signin{
     grid-template-columns: 65% 35%;
     grid-template-rows: auto;
     grid-template-areas: 
-        "headermain . headerimg";
+        "headermain headerimg";
     justify-items: center;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 75%;
     margin: 0px auto;
 }
 
@@ -152,22 +152,22 @@ button.signin{
 
 .headermain>h4{
     margin: 3% 0 3% 0;
-    font-size: 2.5vh;
+    font-size: 2vh;
     color: #8b8b8b
 }
 
 .headermain>button.signin{
     border-radius: 15px;
-    padding: 20px;
-    font-size: 25px;
+    padding: 15px;
+    font-size: 3vh;
     border-color: #0f40da;
     color: #0f40da;
 }
 
 .headermain>button.signup{
     border-radius: 15px;
-    padding: 20px;
-    font-size: 25px;
+    padding: 15px;
+    font-size: 3vh;
     margin-right: 3%;
     border-color: #0f40da;
     background-color: #0f40da;
@@ -176,7 +176,7 @@ button.signin{
 
 .headermain>p{
     margin: 3% 0 3% 0;
-    font-size: 2.5vh;
+    font-size: 2vh;
     color: #787878;
 }
 
