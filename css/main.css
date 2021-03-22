@@ -109,6 +109,7 @@ button.signin0{
 
 .signup>a{
     color:white;
+    font-size:3vh;
 }
 
 button.signin{
@@ -119,45 +120,54 @@ button.signin{
 
 .headercontent {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    /* grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        headermain headerimg;
-    grid-gap: 10px;
+        "headermain headerimg"; 
+    grid-column-gap: 10px; */
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "headermain headerimg";
     justify-items: center;
     align-items: center;
-    width: 85%;
+    justify-content: space-between;
+    width: 75%;
     margin: 0px auto;
 }
 
+.headermain{
+    width: 100%;
+}
+
 .headermain>h2{
-    font-size: 75px;
-    margin: 20% 0 0 0;  
+    font-size: 6vh;
+    margin: 15% 0 2% 0;  
 }
 
 .headermain>h3{
-    font-size: 50px;
-    margin: 5% 0 5% 0;
+    font-size: 4vh;
+    margin: 1% 0 1% 0;
 }
 
 .headermain>h4{
-    margin: 5% 0 5% 0;
-    font-size: 30px;
+    margin: 3% 0 3% 0;
+    font-size: 2vh;
     color: #8b8b8b
 }
 
 .headermain>button.signin{
     border-radius: 15px;
-    padding: 20px;
-    font-size: 25px;
+    padding: 15px;
+    font-size: 3vh;
     border-color: #0f40da;
     color: #0f40da;
 }
 
 .headermain>button.signup{
     border-radius: 15px;
-    padding: 20px;
-    font-size: 25px;
+    padding: 15px;
+    font-size: 3vh;
     margin-right: 3%;
     border-color: #0f40da;
     background-color: #0f40da;
@@ -165,11 +175,8 @@ button.signin{
 }
 
 .headermain>p{
-    margin: 5% 0 5% 0;
-    font-size: 25px;
-}
-
-.headermain>p{
+    margin: 3% 0 3% 0;
+    font-size: 2vh;
     color: #787878;
 }
 
@@ -183,17 +190,27 @@ button.headermainsignin{
     border: none;
     background-color: white;
     color: #8b8b8b;
-    font-size: 25px;
+    font-size: 2.5vh;
     font-weight: bold;
     display: inherit;
 }
 
 .headerimg{
     display: flex;
-    align-content: center;
-    justify-content: center;
-    width: max-content;
-    margin-top: 15%;
+    flex-flow: row nowrap;
+    align-content:flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 30%;
+    overflow: hidden;
+    /* margin-top: 15%;
+    margin-right: 15%; */
+}
+
+.headerimg img{
+    width: 105%;
+    height: 105%;
+    object-fit: contain;
 }
 
 .slogan-box-bait{
@@ -224,7 +241,6 @@ button.headermainsignin{
     lines within when there is extra space in the cross axis
      (horizontally) */
     margin: 50px auto;
-    /* border: 1px solid black; */
 }
 
 .content-part-1{
@@ -288,7 +304,7 @@ button.headermainsignin{
 
 }
 
-.content-p2-left{ /*How to make white background fit???*/
+.content-p2-left{
     display: flex;
     flex-flow: column nowrap;
     justify-items: center;
@@ -441,4 +457,3 @@ button.headermainsignin{
     flex-flow: row nowrap;
     align-items: center
 }
-
